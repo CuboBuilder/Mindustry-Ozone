@@ -20,7 +20,9 @@ jobs:
 
       # Обновление Gradle Wrapper до версии 7.6
       - name: Update Gradle Wrapper
-        run: ./gradlew wrapper --gradle-version 7.6
+        run: |
+          chmod +x ./gradlew
+          ./gradlew wrapper --gradle-version 7.6
 
       # Клонирование библиотеки Atom
       - name: Clone Atom
