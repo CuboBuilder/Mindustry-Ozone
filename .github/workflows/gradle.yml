@@ -11,7 +11,7 @@ jobs:
       - name: Fetch Sources
         uses: actions/checkout@v3
 
-      # Установка JDK 14
+      # Установка JDK 17
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
